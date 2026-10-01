@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DisasterReady</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                🚨 DisasterReady
+            </div>
+
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#learn">Learn</a>
+                <a href="#simulator">Simulator</a>
+                <a href="#progress">Progress</a>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <!-- HERO SECTION -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <p class="small-title">
+                EMERGENCY AWARENESS PLATFORM
+            </p>
+
+            <h1>
+                Would you know
+                <span>what to do?</span>
+            </h1>
+
+            <p>
+                Learn how to respond to emergency situations
+                through interactive scenarios and simulations.
+            </p>
+
+            <button>
+                Start Simulation →
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- DISASTER TYPES -->
+
+    <section id="learn" class="learn">
+
+        <h2>Choose a Disaster</h2>
+
+        <p>
+            Learn essential safety information before
+            testing your knowledge.
+        </p>
+
+        <div class="disaster-container">
+
+            <div class="disaster-card"
+                 onclick="selectDisaster('earthquake')">
+
+                <div class="icon">🌎</div>
+
+                <h3>Earthquake</h3>
+
+                <p>
+                    Learn basic earthquake safety.
+                </p>
+
+            </div>
+
+
+            <div class="disaster-card"
+                 onclick="selectDisaster('flood')">
+
+                <div class="icon">🌊</div>
+
+                <h3>Flood</h3>
+
+                <p>
+                    Learn how to prepare for flooding.
+                </p>
+
+            </div>
+
+
+            <div class="disaster-card"
+                 onclick="selectDisaster('fire')">
+
+                <div class="icon">🔥</div>
+
+                <h3>Fire</h3>
+
+                <p>
+                    Learn basic fire emergency response.
+                </p>
+
+            </div>
+
+
+            <div class="disaster-card"
+                 onclick="selectDisaster('cyclone')">
+
+                <div class="icon">🌪️</div>
+
+                <h3>Cyclone</h3>
+
+                <p>
+                    Learn cyclone preparedness.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SIMULATOR -->
+
+    <section id="simulator" class="simulator">
+
+        <div class="simulator-box">
+
+            <div id="question-number">
+                Question 1 / 5
+            </div>
+
+            <h2 id="question">
+                Select a disaster to start
+            </h2>
+
+            <div id="options"></div>
+
+            <div id="feedback"></div>
+
+            <button id="next-btn"
+                    onclick="nextQuestion()"
+                    style="display:none;">
+
+                Next Question →
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROGRESS -->
+ 
+   <!-- <section id="progress">
+
+        <h2>Your Progress</h2>
+
+        <div class="progress-card">
+
+            <h3 id="score">
+                Score: 0
+            </h3>
+
+            <div class="progress-bar">
+
+                <div id="progress-fill"></div>
+
+            </div>
+
+            <p id="progress-text">
+                Complete the simulator to see your result.
+            </p> -->
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <p>
+            © 2026 DisasterReady | Emergency Awareness Project
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
